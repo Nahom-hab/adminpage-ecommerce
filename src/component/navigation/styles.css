@@ -1,0 +1,39 @@
+.navigation{
+    padding: 5px 10px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;    
+    top: 0;
+	height: 40px;
+}
+
+nav{
+display: flex;
+gap: 20px;
+
+}
+nav a{
+	display: flex;
+	justify-self:center ;
+	align-items: center;
+	text-transform: uppercase;
+	text-decoration: none;
+    font-size: 15px;
+    color: black;
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 8px;
+
+
+}
+nav a:hover{
+	color: rgb(236, 221, 11);
+}
+
