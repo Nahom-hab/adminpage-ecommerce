@@ -1,6 +1,6 @@
 import "./globals.css";
+import { DataProvider } from "@/component/globalcontext/DataContext";
 
-// import { Inter as FontSans } from "next/font/google";
 
 import Navigation from "@/component/navigation/navigation";
 
@@ -14,7 +14,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navigation/>
-        {children}
+    
+        <DataProvider>
+          <div className="body">
+            <div>
+              {children}
+            </div>
+            
+          </div>
+        </DataProvider>
+    
+     
       </body>
     </html>
   );

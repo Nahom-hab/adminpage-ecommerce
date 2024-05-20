@@ -1,10 +1,7 @@
 "use client"
 import User from '@/component/user/user'
-import './styles.css'
 import { UserData } from '@/data/userdata'
 import { useState } from 'react';
-
-
 
 
 export default function Users() {
@@ -34,6 +31,8 @@ export default function Users() {
 
   })
   return (
+    <div>
+    <h2 className='name_header'>View Users</h2>
     <div className='users_table'>
       <div className='userheader-container'>
      
@@ -52,6 +51,7 @@ export default function Users() {
               <p>Total Spending</p>
           </div>
           {users}
+    </div>
     </div>
     </div>
   )

@@ -14,8 +14,15 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.editcard  .view{
+    width: 150px;
+}
 .editcard>img{
     border-radius:16px;
+    width: 220px;
+}
+.margion20{
+    margin-top: 100px;
 }
 .editcard h3{
     margin: 0;
@@ -50,6 +57,7 @@
     color: white;
 }
 .editcard_discriptions p{
+    
     display: flex;
     color:green;
     gap: 3px;
@@ -57,12 +65,19 @@
 .editcard_discriptions p>span{
     color: black;
 }
-
-
+.editcard .disc{
+    color: black;
+    font-size: 12px;
+    margin-top: 13px;
+}
 
 .editcard-btn-container .edit-btn{
     background-color: rgb(5, 137, 146);
     color: white;
+}
+
+.padding10{
+    padding: 10;
 }
 
 
