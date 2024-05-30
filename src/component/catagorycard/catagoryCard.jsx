@@ -1,4 +1,5 @@
 import './catagory.css'
+import Link from 'next/link'
 
 export default function CatagoryCard(props) {
   return (
@@ -8,7 +9,7 @@ export default function CatagoryCard(props) {
         <h3>Catagory: {props.name}</h3>
     </div>
       <div className='editcard-btn-container'>
-        <button className='edit-btn'>EDIT </button>
+        <Link href={`/catagory/${props.id}`}><button className='edit-btn'>EDIT</button></Link> 
         <button className='delete-btn'>DELETE</button>
       </div>
 

@@ -27,14 +27,14 @@ const OrdersCategoryPieChart = ({ orderData }) => {
 
   // Define an array of colors
   const colors = [
-    'rgba(255, 99, 132)',
-    'rgba(54, 162, 235 )',
-    'rgba(255, 206, 86)',
-    'rgba(75, 192, 192)',
-    'rgba(153, 102, 255)',
-    'rgba(255, 159, 64)',
-    'rgba(201, 203, 207)',
-    'rgba(255, 99, 132)',
+    '#4e79a7', // Blue
+    '#f28e2c', // Orange
+    '#e15759', // Red
+    '#76b7b2', // Teal
+    '#59a14f', // Green
+    '#edc949', // Yellow
+    '#af7aa1', // Purple
+    '#ff9da7', // Pink
   ];
 
   // Prepare the data for the pie chart
@@ -56,23 +56,26 @@ const OrdersCategoryPieChart = ({ orderData }) => {
       title: {
         display: true,
         text: 'Top 8 Orders by Category',
+        fontSize: 16, // Decrease the font size of the title
       },
       legend: {
         position: 'left',
         labels: {
           boxWidth: 12,
-          padding: 20,
-          
+          padding: 10, // Decrease the padding between legend items
+          fontSize: 12, // Decrease the font size of the legend labels
         },
       },
     },
     layout: {
       padding: {
-        left: 50,
+        left: 45,
+        right: 45, // Increase the right padding to make the chart bigger
       },
     },
+    responsive: true, // Make the chart responsive
+    maintainAspectRatio: false, // Disable aspect ratio to allow the chart to fill the available space
   };
-
   return <Pie data={chartData} options={options} />;
 };
 

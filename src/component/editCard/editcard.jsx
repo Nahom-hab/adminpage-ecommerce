@@ -1,4 +1,5 @@
 import './styles.css'
+import Link from 'next/link'
 
 export default function Editcard(props) {
   return (
@@ -9,7 +10,7 @@ export default function Editcard(props) {
             <p><span>Price : </span>{props.price}$</p>
         </div>
          <div className='editcard-btn-container'>
-            <button className='edit-btn'>EDIT</button>
+         <Link href={`/products/${props.id}`}><button className='edit-btn'>EDIT</button></Link> 
             <button className='delete-btn'>DELETE</button>
          </div>
 

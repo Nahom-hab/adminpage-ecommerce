@@ -39,16 +39,8 @@ export default function AddProduct() {
         router.back();
     };
 
-    const handleImageChange = (e) => {
-        const file = e.target.files[0];
-        if (file) {
-            setFormData({
-                ...formData,
-                image: file,
-                preview: URL.createObjectURL(file)
-
-            });
-        }
+    const handleImageChange = () => {
+       let x=10
     };
 
     return (
@@ -74,7 +66,7 @@ export default function AddProduct() {
                     </div>
                     <div>
                         <label htmlFor="image">Product Image :</label>
-                        <input type="file" name='image' onChange={handleImageChange} />
+                        <input type="text" name='image' onChange={handleImageChange} />
                     </div>
                     <button type='submit'>Add Product</button>
                 </form>

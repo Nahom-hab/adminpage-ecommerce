@@ -1,5 +1,6 @@
 "use client"
 
+import styles from './styles.module.css'
 import Link from 'next/link'
 import CatagoryCard from '@/component/catagorycard/catagoryCard'
 import DataContext from '@/component/globalcontext/DataContext'
@@ -25,11 +26,11 @@ export default function Catagory() {
 
   return (
     <div>
-        <h2 className='name_header'>Edit Catagory</h2>
-    <div className='products'>
-      <div className='add_products'>
+        <h2 className={styles.name_header}>Edit Catagory</h2>
+    <div className={styles.products}>
+      <div className={styles.add_products}>
       <Link  href='/catagory/addCatagory'>
-          <div className='add'>+</div>
+          <div className={styles.add}>+</div>
         </Link>
       </div>
       {products}

@@ -37,6 +37,13 @@ export default function ChartComponent({ userData }) {
         data: Object.values(userCountByDate),
         borderColor: 'rgb(75, 192, 192)',
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        tension: 0.4,
+        pointRadius: 5,
+        pointHoverRadius: 8,
+        pointHitRadius: 10,
+        pointBackgroundColor: 'rgb(75, 192, 192)',
+        pointBorderColor: 'white',
+        pointBorderWidth: 2,
       },
     ],
   };
@@ -49,31 +56,34 @@ export default function ChartComponent({ userData }) {
         display: true,
         text: 'Users Created Per Day',
         font: {
-          size: 18,
+          size: 22,
+          weight: 'bold',
         },
       },
       legend: {
-        labels: {
-          font: {
-            size: 14,
-          },
-        },
+        display: false,
       },
     },
     scales: {
       x: {
         ticks: {
           font: {
-            size: 12,
+            size: 14,
           },
+        },
+        grid: {
+          color: 'rgba(0, 0, 0, 0.1)',
         },
       },
       y: {
         beginAtZero: true,
         ticks: {
           font: {
-            size: 12,
+            size: 14,
           },
+        },
+        grid: {
+          color: 'rgba(0, 0, 0, 0.1)',
         },
       },
     },

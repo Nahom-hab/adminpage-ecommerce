@@ -10,7 +10,7 @@ export default function Order(props) {
       <p>{props.product}</p>
       <p>{props.date}</p>
       <p className='small'>{props.total}</p>
-      <p className={props.delivery==='Delivered'?'delivery_deliverd':'delivery_pending'}>{props.delivery}</p>
+      <p className={props.delivery==='Shipped'?'delivery_deliverd':'delivery_pending'}>{props.delivery}</p>
     </div>
   </Link>
   )
